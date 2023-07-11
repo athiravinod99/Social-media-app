@@ -1,3 +1,5 @@
+import { Users } from "../../dummyData";
+import CloseFriend from "../closeFriend/CloseFriend";
 import "./Sidebar.css";
 import {
   RssFeed,
@@ -55,15 +57,11 @@ const Sidebar = () => {
         </ul>
         <button className="sidebarButton">Show More</button>
         <hr className="sidebarHr" />
-        <li className="sidebarFriend">
-            <img className="sidebarFriendImg" src="/assets/profile/profile2.jpg" />
-        <span className="sidebarFriendName">Athira</span>
-        </li>
-        {/* <ul className="sidebarFriendList">
+        <ul className="sidebarFriendList">
           {Users.map((u) => (
             <CloseFriend key={u.id} user={u} />
           ))}
-        </ul> */}
+        </ul>
       </div>
     </div>
   );
